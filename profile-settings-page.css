@@ -1,0 +1,202 @@
+/* General Body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+/* Header */
+header {
+  background: #2e7d32;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  margin: 20px;
+  margin-top: 15px;
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+}
+
+.welcome span {
+  margin-right: 10px;
+}
+
+.welcome .icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.welcome .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Settings inside body */
+.settings {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: start;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #000;
+  cursor: pointer;
+}
+
+p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.back-arrow {
+  margin-right: 8px;
+  font-size: 22px;
+}
+
+.settings-title {
+  font-size: 22px;
+}
+
+/* Profile Container */
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-pic img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Form */
+form {
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  align-content: end;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  width: 150px;
+  font-weight: bold;
+  text-align: left;
+  margin-right: 100px;
+  
+}
+
+.form-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #c8e6c9;
+  border-radius: 5px;
+  background: #e8f5e9;
+}
+
+button {
+  width: 40%;
+  background: #2e7d32;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  align-content: center;
+}
+
+button:hover {
+  background: #1b5e20;
+}
+
+/* ✅ Responsive Design */
+
+/* Tablets */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header-right {
+    align-items: flex-start;
+  }
+  .container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+  .profile-pic img {
+    width: 100px;
+    height: 100px;
+  }
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-group label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  header {
+    padding: 10px 15px;
+  }
+  header .logo {
+    font-size: 18px;
+  }
+  .welcome .icon {
+    width: 20px;
+    height: 20px;
+  }
+  .welcome .avatar {
+    width: 35px;
+    height: 35px;
+  }
+  .profile-pic img {
+    width: 80px;
+    height: 80px;
+  }
+  input {
+    font-size: 14px;
+    padding: 8px;
+  }
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
