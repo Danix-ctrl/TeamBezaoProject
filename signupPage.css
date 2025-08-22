@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  font-size: 22px;
+}
+
+body {
+  background-color: rgb(46, 125, 50);
+  color: #fff;
+  width: 1438px;
+  height: 1024px;
+}
+
+header {
+  display: flex;
+  width: 1359px;
+  height: 91px;
+  background-color: #f0f2f1;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 10px 50px;
+  opacity: 1;
+  justify-self: center;
+}
+
+header img {
+  height: 50px;
+  width: 120px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+header button {
+  background-color: rgb(46, 125, 50);
+  height: 48px;
+  width: 160px;
+  border-style: none;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  opacity: 1;
+  padding: 16px 32px;
+  font-size: 16px;
+}
+
+main {
+  background: url("Images/signupImage.png");
+  opacity: 0.5;
+  height: 866px;
+  width: 1359px;
+  display: flex;
+  margin: 20px 15px;
+  color: white;
+  border-radius: 30px;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 25px;
+  justify-self: center;
+}
+
+.leftPanel {
+  width: 655px;
+  height: 799px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 25px;
+  align-content: center;
+  font-size: 18px;
+  margin: 0;
+  border-radius: 30px;
+  opacity: 0.65;
+  border-width: 4px;
+  padding: 317px 51px;
+  align-self: center;
+}
+
+.leftPanel h2 {
+  font-size: 46px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.leftPanel p {
+  line-height: 1.5;
+}
+
+.rightPanel {
+  width: 655px;
+  height: 799px;
+  padding: 20px;
+  background-color: rgba(9, 25, 10, 1);
+  text-align: center;
+  margin-left: 0;
+  padding: 20px 10px;
+  border-radius: 30px;
+  opacity: 1;
+  margin: 0;
+  align-self: center;
+}
+
+.rightPanel h2 {
+  margin: 0 0 30px 0;
+  font-size: 36px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  justify-self: center;
+  margin: 50px;
+}
+
+form input {
+  border: none;
+  border-bottom: 2px solid #f5f2f2;
+  outline: none;
+  background: transparent;
+  font-size: 22px;
+  line-height: 2;
+  margin: 10px;
+  margin-left: 0;
+  width: 100%;
+  height: 50px;
+  color: white;
+}
+
+.accountType {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.accountType input {
+  height: 15px;
+}
+
+.signupButton {
+  background-color: rgb(46, 125, 50);;
+  border: none;
+  width: 140px;
+  height: 50px;
+  color: white;
+  border-radius: 10px;
+  align-self: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.login a {
+  color: rgb(46, 125, 50);
+}
+
+@media (max-width: 900px) {
+  body {
+    width: 834px;
+    height: 1194px;
+    padding-top: 30px;
+    opacity: 1;
+    justify-self: center;
+    font-size: 50px;
+  }
+  
+  header {
+    width: 774px;
+    height: 70px;
+    border-radius: 30px;
+    padding: 10px 12px;
+  }
+
+  main {
+    opacity: 1;
+    padding: 0;
+    width: 90%;
+    height: auto;
+    margin: 100px 30px;
+    align-self: center;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .leftPanel h2 {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .leftPanel p {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  form {
+    margin: 0;
+  }
+
+  form input{
+    font-size: 20px;
+  }
+
+  form .accountType {
+    display: inline-block;
+    font-size: 18px;
+  }
+
+  .accountType label {
+    font-size: 20px;
+  }
+
+  form .signupButton {
+    margin: 30px;
+    font-size: 20px;
+  }
+
+  .login {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  header{
+    height: 50px;
+  }
+
+  header button {
+    display: none;
+  }
+
+  .leftPanel {
+    display: none;
+  }
+
+  body {
+    width: 100%;
+    height: 1194px;
+    padding-top: 30px;
+    opacity: 1;
+    justify-self: center;
+    font-size: 50px;
+  }
+  
+  header {
+    width: 90%;
+    height: 60px;
+    border-radius: 30px;
+    padding: 10px 12px;
+  }
+
+  main {
+    opacity: 1;
+    padding: 0;
+    width: 90%;
+    height: auto;
+    margin: 80px 30px;
+    align-self: center;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .leftPanel h2 {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .leftPanel p {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  form {
+    margin: 0;
+  }
+
+  form input{
+    font-size: 20px;
+  }
+
+  form .accountType {
+    display: inline-block;
+    font-size: 18px;
+  }
+
+  .accountType label {
+    font-size: 20px;
+  }
+
+  form .signupButton {
+    margin: 30px;
+    font-size: 20px;
+  }
+
+  .login {
+    font-size: 20px;
+  }
+}

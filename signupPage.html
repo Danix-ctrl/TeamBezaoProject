@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="signupPage.css">
+  <title>Agrotec Signup</title>
+</head>
+<body>
+  <header>
+    <a href="/dashboard.html">
+      <img src="Images/logoGreen.png" alt="Website Logo">
+    </a>
+    <a href="/loginPage.html">
+      <button>Log In &#8594</button>
+    </a>
+  </header>
+  <main>
+    <div class="leftPanel" >
+      <h2>Let's Get Started</h2>
+      <p>Your farm-to-market connection starts here. <br>Log in to discover fresh produce, the best deals, and enjoy smooth delivery.</p>
+    </div>
+    <div class="rightPanel">
+      <form action="https://formsubmit.co/aeziulo@gmail.com" method="POST" enctype="multipart/form-data">
+        <h2 class="sign">Sign Up</h2>
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_next" value="/dashboard.html">
+        <label for="name"></label>
+        <input type="text" id="name" name="Name" placeholder="Your Name" required>
+        <label for="email"></label>
+        <input type="email" id="email" name="Email" placeholder="Your Email" required>
+        <label for="number"></label>
+        <input type="tel" id="number" name="PhoneNumber" placeholder="Phone Number" required>
+        <label for="password1"></label>
+        <input type="password" id="password1" name="Password1" placeholder="Create Password" required>
+        <label for="password2"></label>
+        <input type="password" id="password2" name="Password2" placeholder="Repeat Password" required>
+        <div class="accountType">
+          <label for="accountType"><input type="radio" id="accountType" value="companyAccount" name="Account Type" required>Company Account</label>
+          <label for="accountType"><input type="radio" id="accountType" value="individualAccount" name="Account Type">Individual Account</label>
+        </div>
+        <input type="submit" value="Sign Up" class="signupButton">
+      </form>
+      <p class="login">Already have an account? <a href="loginPage.html">Login</a></p>
+    </div>
+  </main>
+</body>
+</html>
