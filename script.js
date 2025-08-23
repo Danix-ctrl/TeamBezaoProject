@@ -1,9 +1,16 @@
-// For future interactivity if needed
-console.log("Landing page script loaded.");
-// Smooth scroll to products section when "Discover More" button is clicked
-document.getElementById('discover').addEventListener('click', function () {
-  document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+var menuButtons = document.querySelectorAll('.menu-btn');
+menuButtons.forEach(function(btn){
+  btn.addEventListener('click', function(){
+    menuButtons.forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    alert(btn.innerText + ' clicked');
+  });
 });
 
+document.getElementById('bell').addEventListener('click', function(){
+  alert('No new notifications');
+});
 
-
+document.querySelector('.logout').addEventListener('click', function(){
+  alert('Logging out…');
+});
