@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+        <img src="logoWhite.png" alt="Agrotec Logo">
+    </div>
+    <button><a class="nav-btn" href="dashboard.html"></a>Log In →</button>
+  </header>
+
+  <!-- Login Container -->
+  <section class="login-container">
+    <!-- Left Image -->
+    <div class="login-image">
+      <img src="grain.jpg" height="50" alt="Crops">
+    </div>
+
+    <!-- Right Form -->
+    <div class="login-form">
+      <h2>Log In</h2>
+      <p class="subtitle">Login With Your Email And Password To Place Your Order</p>
+
+      <form>
+        <label>Email address</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password" required>
+
+        <div class="remember">
+          <input type="checkbox" id="remember">
+          <label for="remember">Remember me</label>
+        </div>
+
+        <button type="submit" class="btn" id="logBtn">Log In</button>
+      </form>
+
+      <p class="signup">Do not have an account? <a href="signupPage.html">Sign up</a></p>
+    </div>
+  </section>
+<!-- integrating the login button with dashboard page with javascript -->
+  <script>
+  document.getElementById('loginBtn').onclick = function(event) {
+    event.preventDefault(); // Prevents form from submitting
+    // You can add validation here if needed
+    window.location.href = 'dashboard.html'; // Redirect to dashboard
+  };
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const heroSection = document.querySelector('.hero');
+    if (heroSection) {
+      heroSection.classList.add('slide-in');
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="product-detail.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+        <img src="logoWhite.png" alt="Agrotec Logo">
+    </div>
+    <div class="user-section">
+      <span class="welcome">Welcome Ada</span>
+      <div class="user-avatar">
+        <img src="Frame 2.png" alt="User">
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Details -->
+  <section class="product-container">
+    <!-- Product Image -->
+    <div class="product-image">
+      <img src="crop3.jpg" alt="Maize">
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-info">
+      <a href="#" class="back-arrow">←</a>
+      <h2>Maize</h2>
+      <p class="subtitle">Fresh and Nutritious corn!</p>
+
+      <!-- Rating -->
+      <div class="rating">
+        ⭐⭐⭐⭐⭐
+      </div>
+
+      <!-- Description -->
+      <p class="description">
+        Fresh corn, naturally grown and nourishing in the body. Bagged and sealed for proper accounting and safe transportation.
+      </p>
+
+      <!-- Pricing -->
+      <div class="price">
+        <span class="current-price">₦5,000</span> <small>Per 50kg Bag</small>
+        <span class="old-price">₦7,500</span> <small>Per 50kg Bag</small>
+      </div>
+
+      <!-- Actions -->
+      <div class="actions">
+        <select>
+          <option>10 Bags</option>
+          <option selected>20 Bags</option>
+          <option>50 Bags</option>
+        </select>
+        <button class="btn" id="buyNowBtn">Buy Now</button>
+      </div>
+    </div>
+  </section>
+<!-- integrating the buy now button with delivery page with javascript -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const buyNowBtn = document.getElementById('buyNowBtn');
+    if (buyNowBtn) {
+      buyNowBtn.addEventListener('click', function() {
+        window.location.href = 'deliveryPage.html';
+      });
+    }
+  });
+</script>
+</body>
+</html>

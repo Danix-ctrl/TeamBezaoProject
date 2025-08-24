@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery Details</title>
+  <link rel="stylesheet" href="delivery.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="logoWhite.png" alt="Agrotec Logo">
+    </div>
+    <div class="user-info">
+      <span>Welcome Ada</span>
+      <span class="bell">🔔</span>
+      <img src="Frame 2.png" alt="User" class="profile-pic">
+    </div>
+  </header>
+
+  <!-- Delivery Section -->
+  <section class="delivery">
+    <h2>← Delivery Details</h2>
+
+    <!-- Delivery Options -->
+    <div class="delivery-options">
+      <label><input type="checkbox" checked> Deliver to location</label>
+      <label><input type="checkbox"> Pick in store</label>
+    </div>
+
+    <!-- Delivery Form -->
+    <form class="delivery-form">
+      <label>Receiver's name</label>
+      <input type="text" placeholder="Enter name">
+
+      <label>Delivery address</label>
+      <input type="text" placeholder="Nsukka, Enugu State">
+
+      <label>Nearest landmark</label>
+      <input type="text" placeholder="Enter landmark">
+
+      <label>Phone number</label>
+      <input type="tel" placeholder="Enter phone number">
+    </form>
+
+    <!-- Delivery Fee -->
+    <p class="fee">Delivery fee: <strong>₦5,500</strong></p>
+
+    <!-- Button -->
+    <button class="btn">Proceed to payment</button>
+  </section>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const proceedBtn = document.querySelector('.btn');
+    if (proceedBtn) {
+      proceedBtn.addEventListener('click', function() {
+        window.location.href = 'payment-page.html';
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#f6f7f6;
+  color:#10321b;
+  display:flex;
+}
+
+.side{
+  width:230px;
+  background:#eef5ef;
+  border-right:1px solid #d9e4db;
+  min-height:100vh;
+  padding:16px 12px;
+  display:flex;
+  flex-direction:column;
+}
+.brand{padding:6px 6px 14px 6px;}
+.brand-img{width:130px; height:auto;}
+
+.menu{display:grid; gap:8px;}
+.menu-btn{
+  text-align:left;
+  padding:10px 12px;
+  border-radius:10px;
+  border:1px solid #e1efe4;
+  background:#ffffff;
+  cursor:pointer;
+}
+.menu-btn:hover {
+  background:#d8e9d7;
+  font-weight:bold;
+}
+
+.logout{
+  margin-top:20px;
+  padding:10px;
+  border:1px solid #0c7a21;
+  background:#fff;
+  color:#0c7a21;
+  border-radius:12px;
+  cursor:pointer;
+}
+
+.right{flex:1; display:flex; flex-direction:column;}
+
+.top{
+  background:#0c7a21;
+  color:#ffffff;
+  padding:12px 18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:4px solid #0a651b;
+}
+.top-right{display:flex; align-items:center; gap:12px;}
+.bell{
+  width:36px; height:36px; border-radius:50%; border:none;
+  background:#ffffff; color:#0a651b; cursor:pointer;
+}
+.avatar{width:40px; height:40px; border-radius:50%; object-fit:cover; border:2px solid #fff;}
+.close-btn{background:transparent; border:none; color:#fff; font-size:20px; cursor:pointer;}
+
+.content{padding:20px 28px;}
+
+.title{
+  margin:0 0 16px 0;
+  background:#d8e9d7;
+  text-align:center;
+  padding:14px;
+  border-radius:8px;
+}
+
+.state{font-weight:bold; margin:8px 0 6px 6px;}
+.pending{color:#f5a623;}
+.ok{color:#1f9d3a;}
+.bad{color:#e43b3b;}
+
+.order{
+  background:#0c7a21;
+  color:#ffffff;
+  border-radius:16px;
+  padding:14px;
+  display:flex;
+  gap:14px;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:14px;
+}
+.order > div{flex:1; text-align:center;}
+
+@media (max-width:820px){
+  .side{display:none;}
+  .order{flex-direction:column; align-items:flex-start;}
+  .order > div{text-align:left;}
+}

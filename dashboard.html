@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+        <img src="logoWhite.png" alt="Agrotec Logo">
+    </div>
+    <div class="user-section">
+      <span class="welcome">Welcome Ada</span>
+      <div class="user-avatar">
+        <img src="Frame 2.png" alt="User">
+      </div>
+    </div>
+  </header>
+
+  <!-- Dashboard Layout -->
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="dashboard.html"> Dashboard</a></li>
+        <li><a href="history.html"> View Order</a></li>
+        <li><a href="payment-page.html">💳 Payment Method</a></li>
+        <li><a href="profile-setting-pages.html">⚙️ Settings</a></li>
+      </ul>
+      <button class="logout">⬅ Log out</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h2>Products</h2>
+
+      <!-- Most Traded Crops -->
+      <section class="section">
+        <h3>Most Traded Crops For The Month</h3>
+        <div class="card-container">
+          <!-- Card 1 -->
+          <div class="card">
+            <img src="maize.jpeg" alt="Maize">
+            <h4>Fresh Maize</h4>
+            <p class="price">₦5,000 per 50kg bag</p>
+            <p>200 bags available</p>
+            <p class="info">Fresh maize harvested June 2025</p>
+            <p class="location">📍 Benue, Nigeria</p>
+            <a href="product-detail.html" ></a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <img src="soyabeans.jpg" alt="Soya Beans">
+            <h4>Soya Beans</h4>
+            <p class="price">₦10,000 per 50kg bag</p>
+            <p>200 bags available</p>
+            <p class="info">Soya beans harvested June 2025</p>
+            <p class="location">📍 Benue, Nigeria</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recommended Crops -->
+      <section class="section">
+        <h3>Recommended Crops</h3>
+        <div class="card-container">
+          <!-- Card 3 -->
+          <div class="card">
+            <img src="yam.jpg" alt="Yam">
+            <h4>Yam</h4>
+            <p class="price">₦50,000 per Trip</p>
+            <p>200 bags available</p>
+            <p class="info">Yam harvested January 2025</p>
+            <p class="location">📍 Benue, Nigeria</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card">
+            <img src="beans.jpeg" alt="Beans">
+            <h4>Beans</h4>
+            <p class="price">₦20,000 per 50kg bag</p>
+            <p>200 bags available</p>
+            <p class="info">Beans harvested June 2025</p>
+            <p class="location">📍 Kano, Nigeria</p>
+          </div>
+
+             <!-- Card 5 -->
+          <div class="card">
+            <img src="Rice 2.jpeg" alt="Rice">
+            <h4>Rice</h4>
+            <p class="price">₦20,000 per 50kg bag</p>
+            <p>200 bags available</p>
+            <p class="info">Rice harvested June 2025</p>
+            <p class="location">📍 Kano, Nigeria</p>
+          </div>
+
+             <!-- Card 6 -->
+          <div class="card">
+            <img src="millet.jpg" alt="Millet">
+            <h4>Millet</h4>
+            <p class="price">₦5,000 per 50kg bag</p>
+            <p>200 bags available</p>
+            <p class="info">Millet harvested June 2025</p>
+            <p class="location">📍 Kano, Nigeria</p>
+          </div>
+
+          
+        </div>
+      </section>
+    </main>
+  </div>
+
+<!-- integrate function to product page with javaScrip -->
+  <script>
+   document.addEventListener('DOMContentLoaded', function() {
+    // Select the first card inside the first card-container
+    const card1 = document.querySelector('.section .card-container .card');
+    if (card1) {
+      card1.addEventListener('click', function() {
+        window.location.href = 'product-detail.html';
+      });
+    }
+
+    // Integrate logout button to index.html
+    const logoutBtn = document.querySelector('.logout');
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', function() {
+        window.location.href = 'index.html';
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

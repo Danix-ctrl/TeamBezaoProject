@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order History</title>
+  <link rel="stylesheet" href="history.css">
+</head>
+<body>
+
+  <aside class="side">
+    <div class="brand">
+      <img src="logoGreen.png" alt="Agrotec" class="brand-img">
+    </div>
+
+    <nav class="menu">
+      <button class="menu-btn">🏠 Dashboard</button>
+      <button class="menu-btn">🧾 View Order</button>
+      <button class="menu-btn">💳 Payment Method</button>
+      <button class="menu-btn">⚙ Settings</button>
+    </nav>
+
+    <button class="logout">Log out →</button>
+  </aside>
+
+  <div class="right">
+    
+    <header class="top">
+      <div class="welcome">Welcome, Ada</div>
+      <div class="top-right">
+        <button id="bell" class="bell">🔔</button>
+        <img src="profile.jpg" alt="Profile" class="avatar">
+        <button class="close-btn">✕</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <h1 class="title">Order History</h1>
+
+      <p class="state pending">• Pending</p>
+      <div class="order">
+        <div>Product desc: <b>Maize</b></div>
+        <div>Quantity: <b>100 Bags</b></div>
+        <div>Order date: <b>30 July 2025</b></div>
+        <div>Total Price <b>₦500,000</b></div>
+      </div>
+
+      <p class="state ok">• Completed</p>
+      <div class="order">
+        <div>Product desc: <b>Rice</b></div>
+        <div>Quantity: <b>10 Bags</b></div>
+        <div>Order date: <b>26 July 2025</b></div>
+        <div>Total Price <b>₦200,000</b></div>
+      </div>
+
+      <p class="state bad">• Failed</p>
+      <div class="order">
+        <div>Product desc: <b>Rice</b></div>
+        <div>Quantity: <b>10 Bags</b></div>
+        <div>Order date: <b>26 July 2025</b></div>
+        <div>Total Price <b>₦200,000</b></div>
+      </div>
+
+      <p class="state ok">• Completed</p>
+      <div class="order">
+        <div>Product desc: <b>Soya Beans</b></div>
+        <div>Quantity: <b>20 Bags</b></div>
+        <div>Order date: <b>6 July 2025</b></div>
+        <div>Total Price <b>₦200,000</b></div>
+      </div>
+
+      <p class="state ok">• Completed</p>
+      <div class="order">
+        <div>Product desc: <b>Maize</b></div>
+        <div>Quantity: <b>30 Bags</b></div>
+        <div>Order date: <b>6 July 2025</b></div>
+        <div>Total Price <b>₦150,000</b></div>
+      </div>
+
+      <p class="state ok">• Completed</p>
+      <div class="order">
+        <div>Product desc: <b>Millet</b></div>
+        <div>Quantity: <b>10 Bags</b></div>
+        <div>Order date: <b>1 July 2025</b></div>
+        <div>Total Price <b>₦50,000</b></div>
+      </div>
+    </main>
+  </div>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Select all elements with class 'menu-btn'
+    const menuBtns = document.querySelectorAll('.menu-btn');
+    menuBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        window.location.href = 'dashboard.html';
+      });
+    });
+  });
+</script>
+</body>
+</html>

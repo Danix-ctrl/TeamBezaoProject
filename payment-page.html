@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment page</title>
+    <link rel="stylesheet" href="payment-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="Union.png" alt="Agrotec Logo" class="logo-img">
+    </div>
+    <div class="user-info"> <h3 id="welcomeMessage">Welcome, Guest</h3>
+    
+          <span class="notification" id="notificationBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                 fill="white" viewBox="0 0 24 24" 
+                 class="bell">
+                <path d="M12 24c1.3 0 2.4-1 2.5-2.3h-5A2.5 2.5 0 0 0 12 24zm6.3-6V11c0-3.1-1.6-5.6-4.5-6.3V4a1.8 1.8 0 0 0-3.6 0v.7c-2.9.7-4.5 3.2-4.5 6.3v7l-2 2v1h16v-1l-2-2z"/>
+            </svg>
+             <span class="badge">3</span>
+        </span>
+
+    
+  <div class="user-profile">
+  <label for="uploadUser" class="avatar-label">
+    <img id="userImage" src="Frame 2.png" alt="User Avatar">
+  </label>
+  <input type="file" id="uploadUser" accept="image/*" hidden>
+</div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="card-preview">
+        <img src="Rectangle 4.png" alt="Card">
+    </div>
+    <div class="form">
+<h2>
+  <a href="dashboard.html" class="back-arrow">⬅</a> Payment Details
+</h2>
+
+
+        <div class="pay-methods">
+           
+
+            <div class="payment-option">
+    <img src="7ea0fdf2-7da9-432a-8753-f5608cbb6aa6 1.png" alt="Google Logo" class="google-logo">
+    <span>Google Pay</span>
+</div>
+
+            <div class="payment-option">
+    <img src="a9612440-c1b0-4239-b8b2-0abfb6b1e03a 1.png" alt="Apple Logo" class="Apple-logo">
+    <span>Apple Pay</span>
+</div>
+          <div class="payment-option">
+    <img src="fa68b02c-88a8-4ca2-9711-5bf96d9fa831 1.png" alt="Paypal Logo" class="Paypal-logo">
+    <span>Paypal</span>
+</div>
+    
+</div>
+<h3 class="centre-line"><span>or</span></h3>
+
+ <label>Card Number</label>
+        <div class="card-input">
+  <input type="text" id="cardNumber" placeholder="5678 **** **** 1256" maxlength="19">
+  <i class="fa-solid fa-eye" id="toggleCard"></i>
+</div>
+
+        <label>Card Holder Name</label>
+        <div class="card">
+            <input type="text" id="cardName" placeholder="Okafor Johnson">
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <label>Expiry Date</label>
+                <input type="text" id="expiry" placeholder="MM/YY" maxlength="5">
+            </div>
+            <div class="col">
+                <label>CVV/CVV2</label>
+                <input type="password" id="cvv" placeholder="XXX" maxlength="3">
+            </div>
+            
+   
+        </div>
+    <div class="total-row">
+  <span class="label">Total Amount</span>
+  <span class="amount">₦500,000</span>
+</div>
+<button class="pay-btn" onclick="processPayment()">Pay ₦500,000.00</button>
+
+</div>
+
+<script src="payment-page.js"></script>
+</body>
+</html>
