@@ -9,13 +9,13 @@
 body {
   background-color: rgb(46, 125, 50);
   color: #fff;
-  width: 1438px;
+  /* width: 1438px; */
   height: 1024px;
 }
 
 header {
   display: flex;
-  width: 1359px;
+  width: 90%;
   height: 91px;
   background-color: #ffffff;
   border-radius: 30px;
@@ -52,7 +52,7 @@ main {
   background: url("signupImage.png");
   opacity: 1;
   height: 866px;
-  width: 1359px;
+  width: 90%;
   display: flex;
   margin: 20px 15px;
   color: rgb(255, 255, 255);
@@ -60,12 +60,13 @@ main {
   justify-content: space-between;
   align-items: stretch;
   padding: 25px;
+  gap: 5px;
   justify-self: center;
 }
 
 .leftPanel {
-  width: 655px;
-  height: 799px;
+  width: 50%;
+  height: 95%;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 25px;
   align-content: center;
@@ -89,8 +90,8 @@ main {
 }
 
 .rightPanel {
-  width: 655px;
-  height: 799px;
+  width: 45%;
+  height: 95%;
   padding: 20px;
   background-color: rgba(9, 25, 10, 1);
   text-align: center;
